@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Menu and Image Upload</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="d-flex flex-column">
+    <button class="open-sidebar-btn" onclick="toggleSidebar()">
+      <span>&#9776;</span>
+    </button>
+    <div class="sidebar">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+            <a id="home-link" class="nav-link" href="#">Home</a>
+          </li>
+          
+        <li class="nav-item">
+            <a id="about-link" class="nav-link" href="#">About</a>
+          </li>
+          
+          <li class="nav-item">
+            <a id="services-link" class="nav-link" href="#">Services</a>
+          </li>
+          
+        <li class="nav-item">
+  <a id="contact-link" class="nav-link" href="#">Contact</a>
+</li>
+
+      </ul>
+    </div>
+    <div class="content">
+      <h1 class="ala">Main Content</h1>
+      <p>This is the main content area.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <input type="file" id="image1" accept="image/*" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <input type="file" id="image2" accept="image/*" class="form-control">
+        </div>
+      </div>
+      <div class="preview-container">
+        <img id="preview-image" class="preview-image">
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

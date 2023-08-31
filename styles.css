@@ -1,0 +1,193 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0; /* Adjusted to position the sidebar on the left */
+    height: 100vh;
+    width: 250px;
+    background-color: #000000;
+    transition: left 0.3s ease;
+  }
+  
+  .sidebar.active {
+    left: -250px; /* Negative value to hide the sidebar */
+  }
+  
+  .sidebar .nav-link {
+    color: #ffffff;
+  }
+  
+  .content {
+    margin-left: 250px; /* Adjusted to match sidebar width */
+    padding: 20px;
+    transition: margin 0.3s ease; /* Changed to margin */
+    max-width: 600px; /* Adjusted to set a max width for the container */
+  }
+  
+  .content.active {
+    margin-left: 90; /* Adjusted to hide the sidebar */
+  }
+  
+  body {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: Arial, sans-serif; /* You can change "Arial" to the font you prefer */
+    font-size: 16px; /* You can adjust the font size as needed */
+    line-height: 1.5; /* You can adjust the line height for readability */
+    color: orange; /* You can set the text color as desired */
+  }
+  
+  /* Updated styles for the navbar */
+  .navbar {
+    background-color: #c9c6c6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the navbar span the full width */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Updated styles for navbar links */
+  .navbar .nav-link {
+    color: #fff; /* Text color */
+    font-weight: bold; /* Make text bold */
+    margin-right: 20px; /* Add some spacing between links */
+    text-decoration: none; /* Remove underlines */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Style for active link */
+  .navbar .nav-link.active {
+    color: orange; /* Change the color for the active link */
+  }
+  
+  /* Updated styles for file input elements */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px; /* Negative margin to counteract column spacing */
+  }
+  
+  .col-md-6 {
+    flex-basis: calc(50% - 30px); /* Adjusted column width with spacing */
+    margin: 15px; /* Spacing between columns */
+    box-sizing: border-box; /* Include padding and border in column width */
+  }
+  
+  /* Additional styles for a professional look */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-6 {
+      flex-basis: 100%; /* Full width for smaller screens */
+      margin: 0;
+    }
+  }
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent; /* Transparent background */
+    color: #333;
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Style for file input on focus */
+.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    background-color: #fff; /* White background on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light blue box shadow on focus */
+}
+
+  
+  .preview-container {
+    max-width: 400px;
+    max-height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border: 1px solid #fefcfc;
+  }
+  
+  .preview-image {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    cursor: move;
+    position: absolute;
+    border-radius: 10px; /* Add a 10px border radius to all corners of the image */
+  }
+  
+  
+  .open-sidebar-btn {
+    position: fixed;
+margin-left: -10px;
+    top: 10px;
+    left: 5px; /* Adjusted to move the button away from the left edge */
+    font-size: 24px;
+       background-color: transparent;
+    color: orange !important;
+    border: none;
+    cursor: pointer;
+    z-index: 1; /* Ensure the button is above the sidebar */
+  }
+  
+  /* Additional Styles */
+  .nav-link.active {
+    background-color: white
+
+
+  }
+  ul{
+    list-style-type: none;
+  }
+  
+  .nav-link:hover {
+
+    color: white !important;
+  }
+  
+  .nav-link:not(.active):hover {
+
+    color: orange !important;
+  }
+  
+  /* Added style */
+  .d-flex.flex-column-reverse {
+    flex-direction: column-reverse;
+  }
+li {
+  padding-top: 50px;
+  margin-left: 30px;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.ala {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0d0c0c;
+    
+  }
+  p{
+    color: #333;
+  }
+  ul{
+    color: #333;
+  }
+  li{
+    color: #333;
+  }
